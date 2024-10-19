@@ -1,0 +1,73 @@
+/* General reset for list styles */
+ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Navigation bar styling */
+.navbar {
+  border-radius: 100px; /* Rounded corners */
+  position: fixed; /* Fixed positioning */
+  top: 10px; /* Stick to the top */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust for the element's width */
+  width: 25%; /* Default width */
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Padding for the navbar */
+  z-index: 1000; /* Ensure it stays above other content */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+      width: 80%; /* Increase width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+      width: 95%; /* Further increase width for very small screens */
+      padding: 8px 0; /* Slightly reduce padding for small screens */
+  }
+}
+
+/* Navbar list items styling */
+.navbar-list {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the items */
+  padding: 0; /* Ensure no padding on the list */
+  margin: 0; /* Ensure no margin on the list */
+}
+
+/* Individual link styles */
+.navbar-list li {
+  margin: 0 15px; /* Space between items */
+}
+
+/* Link styling */
+.navbar-list a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2em; /* Adjust font size */
+  font-weight: 500; /* Slightly increase font weight */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform changes */
+}
+
+.navbar-list a:hover {
+  color: #F98866; /* Change color on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Add some top margin to prevent content from being hidden under the navbar */
+body {
+  padding-top: 60px; /* Space for the fixed navbar */
+}

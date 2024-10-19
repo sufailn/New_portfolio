@@ -1,0 +1,130 @@
+.Skills {
+  padding: 40px;
+  margin: 60px;
+  background-image: url('/skills.jpeg'); /* Background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay; /* Blend the image with the gradient */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Gradient overlay */
+  z-index: 0;
+}
+
+#skills {
+  max-width: 1400px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; /* Ensure content is above the gradient overlay */
+}
+
+.skills-section {
+  text-align: center;
+  margin: 0;
+}
+
+.skills-section h1 {
+  color: #ffffff;
+  font-size: 3em;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-bar:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.skill-info {
+  flex: 1;
+  text-align: left;
+}
+
+.skill-info span {
+  display: block;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.skill-progress {
+  flex: 2;
+  margin-left: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 20px;
+  background-color: #F98866;
+  transition: width 0.5s ease-in-out; /* Smooth progress bar animation */
+  box-shadow: 0 0 10px rgba(249, 136, 102, 0.8);
+}
+
+@keyframes progressAnimation {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.skill-bar:hover .progress {
+  background-color: #ff7a52;
+  box-shadow: 0 0 15px rgba(249, 136, 102, 0.9), 0 0 25px rgba(249, 136, 102, 0.5); /* Glow effect on hover */
+}
+
+@media (max-width: 1000px) {
+  .skill-bar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .skill-progress {
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-section h1 {
+      font-size: 2.5em;
+  }
+
+  .skill-info span {
+      font-size: 1em;
+  }
+
+  .progress {
+      height: 18px;
+  }
+}

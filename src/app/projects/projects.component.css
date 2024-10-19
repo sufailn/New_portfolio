@@ -1,0 +1,138 @@
+/* Overall container for the Projects section */
+.Projects {
+  margin: 60px;
+  padding: 40px;
+  background-image: url('/projectBg.jpeg'); /* Background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay; /* Blend the image with the gradient */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)); /* Gradient overlay */
+  z-index: 0;
+}
+
+#projects {
+  max-width: 1400px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; /* Ensure content is above the gradient overlay */
+}
+
+.projects-section {
+  text-align: center;
+}
+
+.projects-section h1 {
+  color: #ffffff;
+  font-size: 3em;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+/* Project bar styling */
+.project-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  position: relative;
+  z-index: 1;
+}
+
+.project-bar:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.project-bar img {
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for images */
+}
+
+.project-details {
+  color: #ffffff;
+  text-align: left;
+  flex: 1;
+}
+
+.project-details h2 {
+  color: #ffffff;
+  margin: 0 0 10px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.project-details p {
+  color: #ffffff;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.project-details li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.b {
+  color: #F98866;
+  font-weight: 600;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .project-bar {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start; /* Align items to the left */
+      padding: 10px;
+  }
+
+  .project-bar img {
+      margin-bottom: 10px; /* Space below image */
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Responsive adjustments for extra small screens */
+@media (max-width: 576px) {
+  .projects-section h1 {
+      font-size: 2em; /* Adjust heading size for smaller screens */
+  }
+
+  .project-details h2 {
+      font-size: 1.5em;
+  }
+
+  .project-bar img {
+      width: 100px; /* Smaller image width */
+      height: 70px;
+  }
+}

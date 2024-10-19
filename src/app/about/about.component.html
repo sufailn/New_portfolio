@@ -1,0 +1,20 @@
+<div class="main">
+    <div>
+    <div class="ab1" *ngIf="profile">
+      <h1>About Me</h1>
+      <img [src]="profile.profileImage" class="profile" alt="Profile Picture">
+      <p class="text">
+        <b class="b">Hello!</b> My name is <b class="b">{{profile.name}}</b> and I am 25 years old. I recently graduated with a Master of Computer Applications <b class="b">(MCA)</b> degree. 
+      </p>
+      <p class="text">
+        {{profile.bio}}
+      </p>
+      <p class="text">
+        I am particularly interested in exploring new technologies and applying my skills to create innovative solutions.
+      </p>
+      <p class="text">
+        Feel free to browse through my portfolio to see some of the work I have done.
+      </p>
+    </div>
+  </div>
+</div>

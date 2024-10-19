@@ -1,0 +1,96 @@
+{
+    "profile": {
+        "name": "Sufail Ahammed N",
+        "title": "Your Title",
+        "bio": "I am Sufail Ahammed, a passionate software developer with a Master's in Computer Applications (MCA). I have a strong foundation in web and software development, particularly skilled in the MEAN stack (MongoDB, Express, Angular, Node.js). I enjoy solving complex problems and exploring emerging technologies to build innovative solutions. My goal is to continually improve my skills and contribute to impactful projects in the tech industry.",
+        "profileImage": "/image.png"
+      },
+    "projects": [
+      {
+        "id": 1,
+        "title": "Todo App",
+        "description": ["The To-Do App is a simple and intuitive task management application developed using Angular, HTML, and CSS. This app helps users keep track of their daily tasks by allowing them to add, update, and delete tasks easily."
+      ],
+      "features": [
+        "Add Tasks: Users can quickly add new tasks to their to-do list with a clear input field.",
+        "Mark as Completed: Tasks can be marked as completed with a single click, helping users keep track of their progress.",
+        "Update Tasks: If a task needs modification, users can easily update the task description.",
+        "Delete Tasks: Completed or unwanted tasks can be removed from the list, keeping the to-do list clean and organized.",
+        "Responsive Design: The app is fully responsive, ensuring a smooth user experience on both desktop and mobile devices."
+      ],
+        "softwareRequirements": [  "Angular",
+        "HTML",
+        "CSS"],
+        "image": "/todo.png"
+      },
+
+
+    {
+      "id": 2,
+      "title": "Smart Licence",
+      "description": [
+        "Smart License improves vehicle safety with sensors and RFID authentication.",
+        "It stops unauthorized access and prevents engine startup if alcohol levels are high.",
+        "Manual engine control works seamlessly with RFID, and it monitors speed.",
+        "The user-friendly app provides alerts and notifications for vehicle status and safety."
+      ],
+      "softwareRequirements": ["Python (Flask)", "Dart (Flutter)", "Sqlyog"],
+      "hardwareRequirements": ["Arduino Uno"],
+      "image": "/smart.jpg"
+    },
+    {
+      "id": 3,
+      "title": "PRE LEARN",
+      "description": [
+        "Pre-Learn transforms preschool education by addressing limitations, enhancing collaboration, and enriching the learning environment.",
+        "Real-time updates and seamless communication reshape the preschool experience."
+      ],
+      "image": "/prelern.png"
+    },
+    {
+      "id": 4,
+      "title": "Attendance system using face detection",
+      "description": [
+        "Hostel attendance system using face detection for automated attendance tracking."
+      ],
+      "softwareRequirements": ["Python (Django)", "SQLite", "OpenCV"],
+      "image": "/face.png"
+    }
+  ],
+  
+    "skills": [
+      {
+        "name": "Angular",
+        "percentage": "94%"
+      },
+      {
+        "name": "HTML",
+        "percentage": "94%"
+      },
+      {
+        "name": "CSS",
+        "percentage": "85%"
+      },
+      {
+        "name": "JavaScript",
+        "percentage": "80%"
+      },
+      {
+        "name": "Python",
+        "percentage": "75%"
+      },
+      {
+        "name": "Java",
+        "percentage": "70%"
+      }
+    ],
+
+
+        
+    "contacts": {
+      "email": "your.email@example.com",
+      "phone": "123-456-7890",
+      "address": "Your Address"
+    }
+  }
+  
