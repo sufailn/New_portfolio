@@ -1,28 +1,87 @@
 <div class="Projects">
-    <div id="projects" class="section">
-      <div class="projects-section">
-        <h1>Projects</h1>
-        <div class="project-bar" *ngFor="let project of projects">
-          <img [src]="project.image" [alt]="project.title" class="img">
-          <div class="project-details">
-            <h2><b class="b">{{ project.title }}</b></h2>
-            <p>{{ project.description }}</p>
-            <b class="b"><i>Features</i></b>
-            <p>{{project.features}}</p>
-            <b class="b"><i>Software Requirements</i></b>
-            <ul>
-              <li *ngFor="let req of project.softwareRequirements">{{ req }}</li>
-            </ul>
-  
-            <b class="b"><i>Hardware Requirements</i></b>
-            <ul *ngIf="project.hardwareRequirements">
-              <li *ngFor="let req of project.hardwareRequirements">{{ req }}</li>
-            </ul>
-  
-            <a [href]="project.link" target="">View Project</a>
-          </div>
+  <div id="projects" class="section">
+    <div class="projects-section">
+      <h1>Projects</h1>
+
+      <!-- Project 1: Todo App -->
+      <div class="project-bar">
+        <img src="/todo.png" alt="Todo App" class="img">
+        <div class="project-details">
+          <h2><b class="b">Todo App</b></h2>
+          <p>
+            The To-Do App is a simple and intuitive task management application developed using Angular, HTML, and CSS. 
+            This app helps users keep track of their daily tasks by allowing them to add, update, and delete tasks easily.
+          </p>
+          <b class="b"><i>Features</i></b>
+          <p>
+            Add Tasks: Users can quickly add new tasks to their to-do list with a clear input field.<br>
+            Mark as Completed: Tasks can be marked as completed with a single click, helping users keep track of their progress.<br>
+            Update Tasks: If a task needs modification, users can easily update the task description.<br>
+            Delete Tasks: Completed or unwanted tasks can be removed from the list, keeping the to-do list clean and organized.<br>
+            Responsive Design: The app is fully responsive, ensuring a smooth user experience on both desktop and mobile devices.
+          </p>
+          <b class="b"><i>Software Requirements</i></b>
+          <ul>
+            <li>Angular</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
         </div>
       </div>
+
+      <!-- Project 2: Smart License -->
+      <div class="project-bar">
+        <img src="/smart.jpg" alt="Smart License" class="img">
+        <div class="project-details">
+          <h2><b class="b">Smart License</b></h2>
+          <p>
+            Smart License improves vehicle safety with sensors and RFID authentication.
+            It stops unauthorized access and prevents engine startup if alcohol levels are high.
+            Manual engine control works seamlessly with RFID, and it monitors speed.
+            The user-friendly app provides alerts and notifications for vehicle status and safety.
+          </p>
+          <b class="b"><i>Software Requirements</i></b>
+          <ul>
+            <li>Python (Flask)</li>
+            <li>Dart (Flutter)</li>
+            <li>Sqlyog</li>
+          </ul>
+          <b class="b"><i>Hardware Requirements</i></b>
+          <ul>
+            <li>Arduino Uno</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 3: PRE LEARN -->
+      <div class="project-bar">
+        <img src="/prelern.png" alt="PRE LEARN" class="img">
+        <div class="project-details">
+          <h2><b class="b">PRE LEARN</b></h2>
+          <p>
+            Pre-Learn transforms preschool education by addressing limitations, enhancing collaboration, and enriching the learning environment.
+            Real-time updates and seamless communication reshape the preschool experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 4: Attendance system using face detection -->
+      <div class="project-bar">
+        <img src="/face.png" alt="Attendance System" class="img">
+        <div class="project-details">
+          <h2><b class="b">Attendance System using Face Detection</b></h2>
+          <p>
+            Hostel attendance system using face detection for automated attendance tracking.
+          </p>
+          <b class="b"><i>Software Requirements</i></b>
+          <ul>
+            <li>Python (Django)</li>
+            <li>SQLite</li>
+            <li>OpenCV</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
-  
+</div>
