@@ -10,24 +10,25 @@
   border-radius: 10px; /* Rounded corners for consistency */
 }
 
-
 /* Project section wrapper */
 #main {
   max-width: 1400px; /* Keep this max-width */
   margin: 40px auto; /* Center the section */
   box-sizing: border-box; /* Ensure padding is included in total width */
 }
+
 .ab1 {
   padding: 40px;
-  max-width: 1550px; /* Align with Contact section width */
+  max-width: 800px; /* Limit width for better readability on large screens */
   margin: 40px auto;
-  background: #ffffffc3;
+  background: rgba(255, 255, 255, 0.8); /* Slight transparency for better background visibility */
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;
   box-sizing: border-box; /* Consistency in padding */
 }
-.ab1:hover{
+
+.ab1:hover {
   background-color: #eee6ef32;
 }
 
@@ -77,14 +78,42 @@ h1 {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .main {
+    margin: 20px;
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .ab1 {
+    padding: 20px;
+    max-width: 90%; /* Allow more width on smaller screens */
+  }
+
+  .profile {
+    width: 120px; /* Smaller profile picture */
+    height: 120px; /* Adjust height to maintain aspect ratio */
+  }
+
   h1 {
-    font-size: 2em;
+    font-size: 2em; /* Smaller heading for mobile */
   }
 
   .text {
-    font-size: 0.9em;
+    font-size: 0.9em; /* Adjust text size for better readability */
   }
 }
 
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5em; /* Further reduce heading size */
+  }
 
+  .text {
+    font-size: 0.85em; /* Smaller text for better fit */
+  }
+
+  .profile {
+    width: 100px; /* Further reduce profile picture size */
+    height: 100px; /* Adjust height to maintain aspect ratio */
+  }
+}
