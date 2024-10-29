@@ -1,7 +1,7 @@
 /* Overall container for the Projects section */
 .Projects {
-  margin: 40px;
-  padding: 40px;
+  margin: 30px;
+  padding: 20px;
   background-image: url('/projectBg.jpeg'); /* Background image */
   background-size: cover;
   background-repeat: no-repeat;

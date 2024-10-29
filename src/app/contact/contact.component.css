@@ -1,10 +1,10 @@
 /* Overall container for the Contact section */
 .Contact {
-  padding: 40px; /* Add padding for consistent spacing */
+  padding: 20px; /* Add padding for consistent spacing */
   background: #fff; /* White background for contrast */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px; /* Rounded corners for consistency */
-  margin: 40px; /* Center the section */
+  margin: 30px; /* Center the section */
   text-align: center; /* Center text in the container */
   background-image: url('/contact.jpeg'); /* Background image */
   background-size: cover; /* Cover the entire area */
