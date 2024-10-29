@@ -1,6 +1,6 @@
 .Skills {
   padding: 40px;
-  margin: 60px;
+  margin: 40px;
   background-image: url('/skills.jpeg'); /* Background image */
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,27 +104,50 @@
   box-shadow: 0 0 15px rgba(249, 136, 102, 0.9), 0 0 25px rgba(249, 136, 102, 0.5); /* Glow effect on hover */
 }
 
+/* Responsive Styles */
 @media (max-width: 1000px) {
   .skill-bar {
-      flex-direction: column;
-      align-items: flex-start;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 15px; /* Reduce padding */
   }
 
   .skill-progress {
-      margin-top: 10px;
+      margin-left: 0; /* Remove left margin */
+      margin-top: 10px; /* Add margin for spacing */
+      width: 100%; /* Make progress bar full width */
+  }
+}
+
+@media (max-width: 768px) {
+  .Skills {
+      padding: 30px; /* Reduce padding for smaller screens */
+      margin: 30px; /* Reduce margin for smaller screens */
+  }
+
+  .skills-section h1 {
+      font-size: 2.5em; /* Reduce font size for headers */
+  }
+
+  .skill-info span {
+      font-size: 1.1em; /* Adjust font size */
+  }
+
+  .progress {
+      height: 18px; /* Adjust height for smaller screens */
   }
 }
 
 @media (max-width: 576px) {
   .skills-section h1 {
-      font-size: 2.5em;
+      font-size: 2em; /* Further reduce font size for very small screens */
   }
 
   .skill-info span {
-      font-size: 1em;
+      font-size: 0.9em; /* Further adjust font size for very small screens */
   }
 
   .progress {
-      height: 18px;
+      height: 16px; /* Adjust height for very small screens */
   }
 }

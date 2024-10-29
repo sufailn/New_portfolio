@@ -1,6 +1,6 @@
 /* Overall container for the Projects section */
 .Projects {
-  margin: 60px;
+  margin: 40px;
   padding: 40px;
   background-image: url('/projectBg.jpeg'); /* Background image */
   background-size: cover;
@@ -119,6 +119,10 @@
       width: 100%;
       height: auto; /* Maintain aspect ratio */
   }
+
+  .projects-section h1 {
+      font-size: 2.5em; /* Slightly smaller heading for medium screens */
+  }
 }
 
 /* Responsive adjustments for extra small screens */
@@ -128,11 +132,15 @@
   }
 
   .project-details h2 {
-      font-size: 1.5em;
+      font-size: 1.5em; /* Adjust project title size */
   }
 
   .project-bar img {
       width: 100px; /* Smaller image width */
-      height: 70px;
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .project-details p {
+      font-size: 14px; /* Smaller font for descriptions */
   }
 }
